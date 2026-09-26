@@ -4,7 +4,7 @@ import { Calendar, MapPin, Zap, ArrowRight, ChevronDown, Cpu, Bot, Cog, Users } 
 
 export default function Hero({ onOpenRegister }) {
   return (
-    <section className="relative min-h-[90vh] flex items-center justify-center pt-28 pb-16 lg:pt-36 lg:pb-24 overflow-hidden tech-grid">
+    <section id="hero" className="relative min-h-[90vh] flex items-center justify-center pt-28 pb-16 lg:pt-36 lg:pb-24 overflow-hidden tech-grid">
       {/* Dynamic Ambient Lighting */}
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] radial-glow-cyan pointer-events-none opacity-50"></div>
       <div className="absolute top-1/3 left-1/4 -translate-x-1/2 w-[450px] h-[450px] radial-glow-blue pointer-events-none opacity-40"></div>

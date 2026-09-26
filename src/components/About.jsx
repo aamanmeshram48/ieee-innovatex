@@ -10,7 +10,7 @@ const ICON_MAP = {
 
 export default function About() {
   return (
-    <section id="about" className="relative py-24 sm:py-32 bg-[#04060d] border-t border-white/5 scroll-mt-20">
+    <section id="about" className="relative py-24 sm:py-32 bg-[#04060d]/50 backdrop-blur-[2px] border-t border-white/5 scroll-mt-20">
       {/* Background ambient glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] radial-glow-blue pointer-events-none opacity-20"></div>
 

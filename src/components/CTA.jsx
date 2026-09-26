@@ -33,7 +33,7 @@ export default function CTA({ isOpen, onClose, onOpen }) {
   return (
     <>
       {/* Registration Section in Page */}
-      <section id="register" className="relative py-24 sm:py-32 bg-[#04060d] border-t border-white/5 scroll-mt-20">
+      <section id="register" className="relative py-24 sm:py-32 bg-[#04060d]/60 backdrop-blur-[2px] border-t border-white/5 scroll-mt-20">
         {/* Glow */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] radial-glow-cyan pointer-events-none opacity-20"></div>
 

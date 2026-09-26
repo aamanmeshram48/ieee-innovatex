@@ -11,7 +11,7 @@ const ICON_MAP = {
 
 export default function Experience() {
   return (
-    <section id="experience" className="relative py-24 sm:py-32 bg-[#04060d] border-t border-white/5 scroll-mt-20 tech-grid">
+    <section id="experience" className="relative py-24 sm:py-32 bg-[#04060d]/55 backdrop-blur-[2px] border-t border-white/5 scroll-mt-20 tech-grid">
       {/* Background ambient lighting */}
       <div className="absolute top-1/3 right-1/4 w-[500px] h-[500px] radial-glow-purple pointer-events-none opacity-20"></div>
 

@@ -8,6 +8,7 @@ import Speakers from './components/Speakers';
 import FeaturedBanner from './components/FeaturedBanner';
 import CTA from './components/CTA';
 import Footer from './components/Footer';
+import ScrollableVideoBackground from './components/ScrollableVideoBackground';
 
 export default function App() {
   const [isRegisterModalOpen, setIsRegisterModalOpen] = useState(false);
@@ -21,7 +22,10 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#04060d] text-slate-100 flex flex-col font-sans selection:bg-cyan-500 selection:text-black">
+    <div className="relative min-h-screen text-slate-100 flex flex-col font-sans selection:bg-cyan-500 selection:text-black">
+      {/* Scrollable Robotic Video Background */}
+      <ScrollableVideoBackground />
+
       {/* Top Fixed Navbar */}
       <Navbar onOpenRegister={handleOpenRegister} />
 

@@ -6,7 +6,7 @@ export default function Schedule() {
   const [activeSession, setActiveSession] = useState(1); // Keynote session active by default
 
   return (
-    <section id="schedule" className="relative py-24 sm:py-32 bg-[#04060d] border-t border-white/5 scroll-mt-20">
+    <section id="schedule" className="relative py-24 sm:py-32 bg-[#04060d]/50 backdrop-blur-[2px] border-t border-white/5 scroll-mt-20">
       {/* Background radial glow */}
       <div className="absolute top-1/2 left-1/3 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] radial-glow-cyan pointer-events-none opacity-15"></div>
 

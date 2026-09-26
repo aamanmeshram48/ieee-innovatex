@@ -11,6 +11,13 @@ Built with a **"Dark Technical Future"** visual identity, combining IEEE academi
 
 ## Features
 
+- **Scrollable Robotic Video Background**: High-performance scroll-driven video scrubbing utilizing `Robotic_arms_assembling_device_1080p_20260927005445.mp4` (`public/robotic-assembly.mp4`). As you scroll, robotic arms assemble a futuristic device in real-time frame synchronization using GPU acceleration and `requestAnimationFrame` lerp interpolation.
+- **Interactive Robotic Telemetry HUD**: Expandable/collapsible floating control console featuring:
+  - **Scroll Sync Mode**: Frame scrubbing synced to scroll depth.
+  - **Ambient Loop Mode**: Continuous ambient loop playback.
+  - **Interactive Assembly Milestones**: Direct jump to 5 key assembly phases (`Chassis Alignment`, `Actuator Placement`, `Micro-Component Assembly`, `Bus Routing`, `Core Activation`).
+  - **Customizable Tint Presets**: `Cinematic` (35%), `Balanced` (60%), and `Deep Focus` (75%) for optimal readability.
+  - **Interactive Scrubber & Audio Toggle**: Timecode tracking with scrub controls and audio toggle.
 - **Responsive Design**: Flawless layout across mobile (`375px`, `390px`), tablet (`768px`, `1024px`), laptop (`1280px`), and desktop (`1440px+`).
 - **IEEE Chapter Branding**: Authentic IEEE, IEEE IAS, and IEEE RAS logos integrated into navigation and footer.
 - **Hero Section**: Abstract futuristic technology visual using pure CSS and SVG (orbiting nodes, concentric radar telemetry, and floating geometric telemetry cards).

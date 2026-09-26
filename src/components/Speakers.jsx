@@ -5,7 +5,7 @@ import { LinkedinIcon, TwitterIcon } from './BrandIcons';
 
 export default function Speakers() {
   return (
-    <section id="speakers" className="relative py-24 sm:py-32 bg-[#04060d] border-t border-white/5 scroll-mt-20">
+    <section id="speakers" className="relative py-24 sm:py-32 bg-[#04060d]/50 backdrop-blur-[2px] border-t border-white/5 scroll-mt-20">
       {/* Background Lighting */}
       <div className="absolute top-1/2 right-1/4 w-[600px] h-[500px] radial-glow-blue pointer-events-none opacity-20"></div>
 

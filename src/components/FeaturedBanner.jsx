@@ -3,7 +3,7 @@ import { ArrowRight, Sparkles, Terminal } from 'lucide-react';
 
 export default function FeaturedBanner({ onOpenRegister }) {
   return (
-    <section className="relative py-24 sm:py-32 overflow-hidden bg-gradient-to-b from-[#04060d] via-[#080d1e] to-[#04060d] border-t border-b border-white/10 tech-grid">
+    <section className="relative py-24 sm:py-32 overflow-hidden bg-gradient-to-b from-[#04060d]/70 via-[#080d1e]/50 to-[#04060d]/70 backdrop-blur-[2px] border-t border-b border-white/10 tech-grid">
       {/* Background Futuristic Glow & Concentric Rings */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] radial-glow-cyan pointer-events-none opacity-20"></div>
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] radial-glow-purple pointer-events-none opacity-25"></div>
