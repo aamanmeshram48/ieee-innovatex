@@ -127,3 +127,97 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #00acd7;
 }
+
+/* ==========================================================================
+   Glitch Fade Animations
+   ========================================================================== */
+
+@keyframes glitch-fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) skewX(-8deg);
+    filter: blur(8px);
+    text-shadow: 4px 0 #00acd7, -4px 0 #ff3700;
+  }
+  20% {
+    opacity: 0.5;
+    transform: translateY(-4px) skewX(6deg);
+    filter: blur(4px);
+    text-shadow: -4px 0 #00acd7, 4px 0 #ff3700;
+    clip-path: polygon(0 15%, 100% 15%, 100% 40%, 0 40%);
+  }
+  40% {
+    opacity: 0.8;
+    transform: translateY(3px) skewX(-4deg);
+    filter: blur(2px);
+    text-shadow: 3px 0 #00f0ff, -3px 0 #ff0055;
+    clip-path: polygon(0 45%, 100% 45%, 100% 80%, 0 80%);
+  }
+  60% {
+    opacity: 0.95;
+    transform: translateY(-2px) skewX(2deg);
+    filter: blur(1px);
+    text-shadow: -2px 0 #00acd7, 2px 0 #ff3700;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  80% {
+    opacity: 0.98;
+    transform: translateY(1px) skewX(-1deg);
+    filter: blur(0);
+    text-shadow: 1px 0 #00acd7, -1px 0 #ff3700;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) skewX(0);
+    filter: blur(0);
+    text-shadow: none;
+    clip-path: none;
+  }
+}
+
+@keyframes glitch-hover-pulse {
+  0% {
+    text-shadow: 2px 0 #00acd7, -2px 0 #ff3700;
+    transform: translate(0);
+  }
+  20% {
+    text-shadow: -3px 0 #00acd7, 3px 0 #ff3700;
+    transform: translate(-2px, 1px) skewX(-2deg);
+  }
+  40% {
+    text-shadow: 3px 0 #00f0ff, -3px 0 #ff0055;
+    transform: translate(2px, -1px) skewX(2deg);
+  }
+  60% {
+    text-shadow: -2px 0 #00acd7, 2px 0 #ff3700;
+    transform: translate(-1px, 2px);
+  }
+  80% {
+    text-shadow: 2px 0 #00acd7, -2px 0 #ff3700;
+    transform: translate(1px, -1px);
+  }
+  100% {
+    text-shadow: none;
+    transform: translate(0);
+  }
+}
+
+.glitch-fade-active {
+  animation: glitch-fade-in 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.glitch-text-hover:hover {
+  animation: glitch-hover-pulse 0.45s steps(2, start) infinite;
+  display: inline-block;
+}
+
+.cyber-scanline {
+  background: linear-gradient(
+    to bottom,
+    transparent 50%,
+    rgba(0, 172, 215, 0.04) 51%,
+    transparent 52%
+  );
+  background-size: 100% 4px;
+}
+
